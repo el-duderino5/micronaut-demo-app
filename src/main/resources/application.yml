@@ -1,0 +1,7 @@
+consul:
+  client:
+    registration:
+      enabled: true
+      check:
+        http: true
+    default-zone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
